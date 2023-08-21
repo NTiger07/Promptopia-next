@@ -1,3 +1,5 @@
+import Feed from "@components/Feed";
+
 export const metadata = {
   title: "Promptopia - Home",
   description: "Discover and Share AI Prompts!",
@@ -14,6 +16,7 @@ const Home = () => {
         Promptopia is an open-source AI prompting tool for the modern world to
         discover, create and share creative prompts.
       </p>
+      <Feed />
     </section>
   );
 };
