@@ -16,6 +16,7 @@ export default function Nav() {
           height={30}
           className="object-contain"
         />
+        <p className="logo_text">Promptopia</p>
       </Link>
     </nav>
   );
