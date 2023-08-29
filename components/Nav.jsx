@@ -48,7 +48,7 @@ export default function Nav() {
                 height={37}
                 className="rounded-full"
                 alt="profile"
-              ></Image>
+              />
             </Link>
           </div>
         ) : (
@@ -65,6 +65,24 @@ export default function Nav() {
                 </button>
               ))}
           </>
+        )}
+      </div>
+
+      {/* Mobile Navigation */}
+
+      <div className="sm:hidden flex relative">
+        {isUserLoggedIn ? (
+          <div className="flex">
+            <Image
+              src="/assets/images/logo.svg"
+              width={37}
+              height={37}
+              className="rounded-full"
+              alt="profile"
+            />
+          </div>
+        ) : (
+          <></>
         )}
       </div>
     </nav>
